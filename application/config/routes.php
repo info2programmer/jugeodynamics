@@ -1,11 +1,11 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 // Forntend
 $route['default_controller'] = 'welcome';
 $route['index'] = 'welcome/index';
 $route['404_override'] = 'welcome/pageNotFound';
-$route['translate_uri_dashes'] = FALSE;
+$route['translate_uri_dashes'] = false;
 
 
 
@@ -22,3 +22,5 @@ $route['create-news'] = 'admin/home/addNews';
 $route['manage-research'] = 'admin/reseach_managment/index';
 $route['create-research'] = 'admin/reseach_managment/create';
 
+$route['manage-publication'] = 'admin/publication_managment/index';
+$route['create-publication'] = 'admin/publication_managment/create';

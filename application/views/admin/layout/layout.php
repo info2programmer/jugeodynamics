@@ -1,35 +1,36 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $title ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php echo $title ?></title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="DataTables/datatables.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
-<script src="<?php echo base_url() ?>assets/admin/js/ckeditor.js"></script>
-<script src="<?php echo base_url() ?>assets/admin/js/ck.js"></script>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/ckeditor.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/ck.js"></script>
 
-<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" />
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link href="<?php echo base_url() ?>assets/admin/css/style.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>assets/admin/css/style.css" rel="stylesheet" />
 
-<link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-<link href="<?php echo base_url() ?>assets/admin/css/ckeditor.css" rel="stylesheet">
-<link href="<?php echo base_url() ?>assets/admin/css/neo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/admin/css/ckeditor.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/admin/css/neo.css" rel="stylesheet">
 
 </head>
 
@@ -37,27 +38,27 @@
 
 
 
-<div class="nav-side-menu">
-    <div class="brand">JUGEODYNAMICS<br /><span style="font-size:14px;">Hello There, how is your day going?</span></div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-  
+    <div class="nav-side-menu">
+        <div class="brand">JUGEODYNAMICS<br /><span style="font-size:14px;">Hello There, how is your day going?</span></div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
         <div class="menu-list">
-  
+
             <ul id="menu-content" class="menu-content collapse out">
-                
-                 <li <?php if($this->uri->segment(1) == "dashboard"): ?> class="active" <?php endif ?>>
-                  <a href="<?php echo base_url() ?>dashboard.html"><i class="fa fa-th-large fa-lg"></i> Dashboard</a>
+
+                <li <?php if ($this->uri->segment(1) == "dashboard") : ?> class="active" <?php endif ?>>
+                    <a href="<?php echo base_url() ?>dashboard.html"><i class="fa fa-th-large fa-lg"></i> Dashboard</a>
                 </li>
-                
-                <li data-toggle="collapse" data-target="#company" class="collapsed <?php if($this->uri->segment(1) == "change-password"): ?> active <?php endif ?>" >
-                  <a href="#"><i class="fa fa-bank fa-lg"></i> Account Settings <span class="arrow"></span></a>
+
+                <li data-toggle="collapse" data-target="#company" class="collapsed <?php if ($this->uri->segment(1) == "change-password") : ?> active <?php endif ?>">
+                    <a href="#"><i class="fa fa-bank fa-lg"></i> Account Settings <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="company">
                     <li><a href="<?php echo base_url() ?>change-password.html">Change Password</a></li>
                 </ul>
-                
-                <li  data-toggle="collapse" data-target="#about" class="collapsed">
-                  <a href="#"><i class="fa fa-cog fa-lg"></i> Home Settings <span class="arrow"></span></a>
+
+                <li data-toggle="collapse" data-target="#about" class="collapsed">
+                    <a href="#"><i class="fa fa-cog fa-lg"></i> Home Settings <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="about">
                     <li><a href="<?php echo base_url() ?>manage-slider.html">Slider Management</a></li>
@@ -85,10 +86,10 @@
                     <li><a href="#">Sales Return</a></li>
                     <li><a href="#">Sales & Invoice Report</a></li>
                 </ul> -->
-                
-                
-                
-               <!-- <li  data-toggle="collapse" data-target="#projects" class="collapsed">
+
+
+
+                <!-- <li  data-toggle="collapse" data-target="#projects" class="collapsed">
                   <a href="#"><i class="fa fa-star fa-lg"></i>Projects <span class="arrow"></span></a>
                 </li>
                 	<ul class="sub-menu collapse" id="projects">
@@ -133,8 +134,8 @@
                     </ul>
                     
                 </ul> -->
-                
-                
+
+
                 <!-- <li  data-toggle="collapse" data-target="#finance" class="collapsed">
                   <a href="#"><i class="fa fa-copy fa-lg"></i> Financial Reports <span class="arrow"></span></a>
                 </li>
@@ -144,40 +145,44 @@
                     <li><a href="#">Petty Cash Book Report</a></li>
                 </ul>
 				 -->
-                
-                <li <?php if($this->uri->segment(1) == "create-research" || $this->uri->segment(1) == "manage-research"): ?> class="active" <?php endif ?>>
-                  <a href="<?php echo base_url() ?>manage-research.html"><i class="fa fa-copy fa-lg"></i> Reseach Management</a>
+
+                <li <?php if ($this->uri->segment(1) == "create-research" || $this->uri->segment(1) == "manage-research") : ?> class="active" <?php endif ?>>
+                    <a href="<?php echo base_url() ?>manage-research.html"><i class="fa fa-copy fa-lg"></i> Reseach Management</a>
                 </li>
-                
+
+                <li <?php if ($this->uri->segment(1) == "create-publication" || $this->uri->segment(1) == "manage-publication") : ?> class="active" <?php endif ?>>
+                    <a href="<?php echo base_url() ?>manage-publication.html"><i class="fa fa-copy fa-lg"></i> Publication Management</a>
+                </li>
+
                 <li class="">
-                  <a href="<?php echo base_url() ?>logout.html"><i class="fa fa-sign-out fa-lg"></i> Log Out</a>
+                    <a href="<?php echo base_url() ?>logout.html"><i class="fa fa-sign-out fa-lg"></i> Log Out</a>
                 </li>
-            
+
             </ul>
 
-     </div>
-</div>
-
-
-<section id="topBar">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-7 col-sm-12">
-            	<?php echo $pageName ?>
-            </div>
-            
-            <div class="col-md-3 col-sm-12">
-            	<h5><i class="fa fa-thumbs-up"></i> Welcome Admin</h5>
-            </div>
-            <div class="col-md-2 col-sm-12">
-            	<h5><i class="fa fa-sign-out"></i> <a href="<?php echo base_url() ?>logout.html" style="text-decoration:none;">Log out</a></h5>
-            </div>
-            
         </div>
     </div>
-</section>
 
-<!-- <section id="mainBody">
+
+    <section id="topBar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <?php echo $pageName ?>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <h5><i class="fa fa-thumbs-up"></i> Welcome Admin</h5>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h5><i class="fa fa-sign-out"></i> <a href="<?php echo base_url() ?>logout.html" style="text-decoration:none;">Log out</a></h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="mainBody">
     <div class="container-fluid">
         <div class="row">
            
@@ -753,14 +758,15 @@
     </div>
 </section> -->
 
-<?php $this->load->view($mainContent) ?>
+    <?php $this->load->view($mainContent) ?>
 
 </body>
 
 <script>
-	$(document).ready(function() {
+    $(document).ready(function() {
         $('#example').DataTable();
         initSample();
-    } );
+    });
 </script>
-</html>
+
+</html> 
