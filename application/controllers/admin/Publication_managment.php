@@ -31,7 +31,9 @@ class Publication_managment extends CI_Controller
     {
         if ($this->input->post('btnSubmit') == "submit") {
             $this->form_validation->set_rules('txtTitle', 'Publication Title', 'trim|required');
-            $this->form_validation->set_rules('txtContent', 'Content Line 1', 'trim|required');
+            $this->form_validation->set_rules('txtContent', 'Content', 'trim|required');
+            $this->form_validation->set_rules('txtDate', 'Date', 'trim|required');
+            $this->form_validation->set_rules('ddlType', 'Type', 'trim|required');
 
 
             if ($this->form_validation->run() == false) {
@@ -39,9 +41,10 @@ class Publication_managment extends CI_Controller
                 redirect('create-publication', 'refresh');
             } else {
                 $data = array(
-                    'image' => $this->common_model->upload_image('imageFile', './assets/front/publication-image/', 'create-publication'),
+                    'date' => $this->input->post('txtDate', true),
                     'title' => $this->input->post('txtTitle', true),
                     'content' => $this->input->post('txtContent', true),
+                    'categoy' => $this->input->post('ddlType', true),
                     'created' => date('Y-m-d h.i.s a'),
                     'publisher' => 1
                 );
@@ -61,11 +64,9 @@ class Publication_managment extends CI_Controller
 
 
     // This function for delete Publication
-    public function deletePublication($id, $fileImage)
+    public function deletePublication($id)
     {
-        $fileName = urldecode($fileImage);
         $this->common_model->delete_record('id', $id, 'ju_publication');
-        unlink("assets/front/publication-image/" . $fileName);
         $this->session->set_flashdata('error_message', 'Publication Image Deleted');
         redirect('manage-publication', 'refresh');
     }
@@ -85,7 +86,9 @@ class Publication_managment extends CI_Controller
     {
         if ($this->input->post('btnSubmit') == "submit") {
             $this->form_validation->set_rules('txtTitle', 'Publication Title', 'trim|required');
-            $this->form_validation->set_rules('txtContent', 'Content Line 1', 'trim|required');
+            $this->form_validation->set_rules('txtContent', 'Content', 'trim|required');
+            $this->form_validation->set_rules('txtDate', 'Date', 'trim|required');
+            $this->form_validation->set_rules('ddlType', 'Type', 'trim|required');
 
 
 
@@ -93,16 +96,13 @@ class Publication_managment extends CI_Controller
                 $this->session->set_flashdata('error_message', validation_errors());
                 redirect('home/editPublication/' . $id, 'refresh');
             } else {
-                $image = $this->input->post('txtOldImage');
-                if (!empty($_FILES['imageFile']['tmp_name'])) {
-                    unlink("assets/front/publication-image/" . $image);
-                    $image = $this->common_model->upload_image('imageFile', './assets/front/publication-image/', 'home/editPublication/' . $id);
-                }
+
                 $data = array(
-                    'image' => $image,
+                    'date' => $this->input->post('txtDate', true),
                     'title' => $this->input->post('txtTitle', true),
                     'content' => $this->input->post('txtContent', true),
-                    'created' => date('Y-m-d h.i.s a'),
+                    'categoy' => $this->input->post('ddlType', true),
+                    'created' => date('Y-m-d h.i.s a')
                 );
                 $this->common_model->updateData($id, 'id', $data, 'ju_publication');
                 $this->session->set_flashdata('success_message', 'Publication Edited Successfully');

@@ -1,0 +1,69 @@
+<header>
+
+  <div class="header-bottom">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <h1><a class="navbar-brand" href="index.html">
+            <img src="<?php echo base_url() ?>assets/front/images/logo.png">
+          </a></h1>
+        <button class="navbar-toggler ml-lg-auto ml-sm-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <ul class="navbar-nav text-center ml-auto">
+                            <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
+                                <a class="hover-fill" href="home.html" data-txthover="Home">Home</a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+                                <a class="hover-fill" href="about.html" data-txthover="About">about</a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+                                <a class="hover-fill" href="portfolio.html" data-txthover="Portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
+                                <a class=" hover-fill" data-txthover="Pages" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="hover-fill" href="services.html" data-txthover="Services">Services</a>
+                                    <a class="hover-fill" href="pricingplans.html" data-txthover="Pricing Plans">Pricing
+                                        Plans</a>
+                                    <a class="hover-fill" href="courses.html" data-txthover="Courses">Courses</a>
+                                    <a class="hover-fill" href="single.html" data-txthover="Single Course">Single
+                                        Course</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="hover-fill" href="team.html" data-txthover="Team">Team</a>
+                                    <a class="hover-fill" href="testimonials.html" data-txthover="Testimonials">Testimonials</a>
+                                    <a class="hover-fill" href="typography.html" data-txthover="Typography">Typography</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="hover-fill" href="contact.html" data-txthover="Contact">contact</a>
+                            </li>
+                        </ul> -->
+          <ul class="navbar-nav text-center ml-auto">
+            <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
+              <a class="hover-fill" href="<?php echo base_url() ?>" data-txthover="Home">Home</a>
+            </li>
+            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+              <a class="hover-fill" href="<?php echo base_url() ?>research" data-txthover="Research">Research</a>
+            </li>
+            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+              <a class="hover-fill" href="<?php echo base_url() ?>publication" data-txthover="Publications">Publications</a>
+            </li>
+            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+              <a class="hover-fill" href="<?php echo base_url() ?>lab" data-txthover="Lab">Lab</a>
+            </li>
+            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+              <a class="hover-fill" href="<?php echo base_url() ?>group" data-txthover="Group">Group</a>
+            </li>
+            <li class="nav-item">
+              <a class="hover-fill" href="<?php echo base_url() ?>contact" data-txthover="Contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
