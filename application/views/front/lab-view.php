@@ -1,8 +1,9 @@
+
 <!DOCTYPE HTML>
 <html lang="zxx">
 
 <head>
-    <title>Research</title>
+    <title>Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Skill Point Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -18,15 +19,15 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     </script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="<?php echo base_url() ?>assets/front/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- animation -->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<?php echo base_url() ?>assets/front/css/animate.css" rel="stylesheet" type="text/css" media="all">
     <!-- Custom CSS -->
-    <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <!-- courses -->
-    <link href="css/courses.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<?php echo base_url() ?>assets/front/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- portfolio  -->
+    <link href="<?php echo base_url() ?>assets/front/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
     <!-- font-awesome icons -->
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/front/css/fontawesome-all.min.css" rel="stylesheet">
     <!-- //Custom Theme files -->
     <!-- online fonts -->
     <link
@@ -53,37 +54,37 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- <ul class="navbar-nav text-center ml-auto">
-                                    <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
-                                        <a class="hover-fill" href="home.html" data-txthover="Home">Home</a>
-                                    </li>
-                                    <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                        <a class="hover-fill" href="about.html" data-txthover="About">about</a>
-                                    </li>
-                                    <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                        <a class="hover-fill" href="portfolio.html" data-txthover="Portfolio">Portfolio</a>
-                                    </li>
-                                    <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
-                                        <a class=" hover-fill" data-txthover="Pages" href="#" id="navbarDropdown" role="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Pages
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="hover-fill" href="services.html" data-txthover="Services">Services</a>
-                                            <a class="hover-fill" href="pricingplans.html" data-txthover="Pricing Plans">Pricing
-                                                Plans</a>
-                                            <a class="hover-fill" href="courses.html" data-txthover="Courses">Courses</a>
-                                            <a class="hover-fill" href="single.html" data-txthover="Single Course">Single
-                                                Course</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="hover-fill" href="team.html" data-txthover="Team">Team</a>
-                                            <a class="hover-fill" href="testimonials.html" data-txthover="Testimonials">Testimonials</a>
-                                            <a class="hover-fill" href="typography.html" data-txthover="Typography">Typography</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="hover-fill" href="contact.html" data-txthover="Contact">contact</a>
-                                    </li>
-                                </ul> -->
+                                        <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
+                                            <a class="hover-fill" href="home.html" data-txthover="Home">Home</a>
+                                        </li>
+                                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+                                            <a class="hover-fill" href="about.html" data-txthover="About">about</a>
+                                        </li>
+                                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+                                            <a class="hover-fill" href="portfolio.html" data-txthover="Portfolio">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
+                                            <a class=" hover-fill" data-txthover="Pages" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pages
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="hover-fill" href="services.html" data-txthover="Services">Services</a>
+                                                <a class="hover-fill" href="pricingplans.html" data-txthover="Pricing Plans">Pricing
+                                                    Plans</a>
+                                                <a class="hover-fill" href="courses.html" data-txthover="Courses">Courses</a>
+                                                <a class="hover-fill" href="single.html" data-txthover="Single Course">Single
+                                                    Course</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="hover-fill" href="team.html" data-txthover="Team">Team</a>
+                                                <a class="hover-fill" href="testimonials.html" data-txthover="Testimonials">Testimonials</a>
+                                                <a class="hover-fill" href="typography.html" data-txthover="Typography">Typography</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="hover-fill" href="contact.html" data-txthover="Contact">contact</a>
+                                        </li>
+                                    </ul> -->
                         <ul class="navbar-nav text-center ml-auto">
                             <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
                                 <a class="hover-fill" href="index.html" data-txthover="Home">Home</a>
@@ -111,164 +112,114 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         </div>
     </header>
     <!-- //header -->
-
-    <!-- banner -->
+    <!-- inner banner -->
     <div class="inner-banner-w3ls text-right d-flex align-items-center">
         <div class="container">
-            <h6 class="agileinfo-title">Publications </h6>
+            <h6 class="agileinfo-title">Lab </h6>
             <ol class="breadcrumb-parent d-flex justify-content-end">
                 <li class="breadcrumb-nav">
                     <a href="index.html">Home</a>
                 </li>
-                <li class="breadcrumb-nav active  text-capitalize" aria-current="page">Publications</li>
+                <li class="breadcrumb-nav active  text-capitalize" aria-current="page">Lab</li>
             </ol>
         </div>
     </div>
-    <!-- //banner -->
-    <!-- courses -->
-    <section class="courses-sec py-5">
-        <div class="container py-lg-5">
+    <!-- //inner banner -->
+    <!-- portfolio -->
+    <section class="wthree-row w3-gallery py-sm-5 py-3">
+        <div class="container py-lg-5 py-3">
             <div class="title-section pb-4">
-                <h3 class="main-title-agile">All Publications</h3>
+                <h3 class="main-title-agile">Lab</h3>
                 <div class="title-line">
                 </div>
             </div>
-
-            <div class="well txtbasic1">
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2019</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>*Mondal, S. K., Das, P.K., Mandal, N., Arya, A. 2019.</h5>
-                        <h6 class="text-info"> A novel approach to quantify the structural distortions of U/Th snub-disphenoids and their role in zircon to reidite type phase transition of urnaothorite. arXiv preprint: 1907.05115, 2019 (Cornell University)</h6>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2019</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>*Mukhopadhyay, M., Biswas, U., Mandal, N., Misra, S. 2019. </h5>
-                        <h6 class="text-info"> Factors controlling shear roughness: an insight from field and laboratory experiments. Journal of Geophysical Research: Solid Earth, 124 (2), 1273-1293</h6>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>*Barai, N., Mandal, N. 2018. </h5>
-                        <h6 class="text-info">Breakup versus coalescence of closely packed fluid drops in simple shear flows. International Journal of Multiphase Flow, 111, 1-15.</h6>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>Marques, F.O., Mandal, N., *Ghosh, S., Ranalli, G., Bose, S., 2018. </h5>
-                        <h6 class="text-info"> Channel flow, tectonic overpressure, and exhumation of high-pressure rocks in the Greater Himalayas. Solid Earth, 9, 1061-1078.
-
-                        </h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>Marques, F.O., Ranalli, G. and Mandal, N., 2018. </h5>
-                        <h6 class="text-info">Tectonic overpressure at shallow depth in the lithosphere: The effects of boundary conditions. Tectonophysics, 746, 702-715.</h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>Mandal, N., Sarkar, S., Baruah, A. and Dutta, U., 2018.</h5>
-                        <h6 class="text-info">Production, pathways and budgets of melts in mid-ocean ridges: an enthalpy based thermo-mechanical model. Physics of the Earth and Planetary Interiors, 10.1016/j.pepi.2018.01.008.
-                        </h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>*Dasgupta, R., Mandal, N., 2018. </h5>
-                        <h6 class="text-info">Surface topography of the overriding plates in bi-vergent subduction systems: a mechanical model. Tectonophysics, 746, 282-295.
-
-                        </h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>*Ghosh, S., Bose, S., Mandal, N., Das, A., 2018.</h5>
-                        <h6 class="text-info"> Control on frontal thrust progression by the mechanically weak Gondwana horizon in the Darjeeling-Sikkim Himalaya. Tectonophysics, 727, 12-27.
-
-                        </h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2017</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>Acharyya, S. K., Ghosh, S., Mandal, N., Bose, S., & Pande, K. (2017). </h5>
-                        <h6 class="text-info">Pre-Himalayan tectono-magmatic imprints in the Darjeeling-Sikkim Himalaya (DSH) constrained by 40Ar/39Ar dating of muscovite. Journal of Asian Earth Sciences, 146, 211-220.
-
-
-                        </h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2017</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>*Das, P.K., Mandal, N., Arya, A., 2017.</h5>
-                        <h6 class="text-info">Effects of Fe substitution on B3-B1 phase transition and structural, vibrational, and electronic properties of ZnS from DFT calculations, Journal of Applied Physics, 121, 085101(1-8).
-                        </h6>
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-1" style="background-color:#0080C0; color:#FFFFFF;">
-                        <h2>2018</h2>
-                    </div>
-                    <div class="col-md-11 text-left">
-                        <h5>Recent Blog Title One. Recent Blog Title</h5>
-                        <h6 class="text-info">Production, pathways and budgets of melts in mid-ocean ridges: an enthalpy based thermo-mechanical model. Physics of the Earth and Planetary Interiors, 10.1016/j.pepi.2018.01.008.
-                        </h6>
-                        
-                    </div>
-                </div>
-            </div>
-
+            <ul class="portfolio-categ filter my-md-5 my-3">
+                <li class="port-filter all active">
+                    <a href="#">All</a>
+                </li>
+                <li class="cat-item-1">
+                    <a href="#" title="Category 1">tab 1</a>
+                </li>
+                <li class="cat-item-2">
+                    <a href="#" title="Category 2">tab 2</a>
+                </li>
+                <li class="cat-item-3">
+                    <a href="#" title="Category 3">tab 3</a>
+                </li>
+                <li class="cat-item-4">
+                    <a href="#" title="Category 4">tab 4</a>
+                </li>
+            </ul>
+            <ul class="portfolio-area clearfix">
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-1">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g1.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-2" data-type="cat-item-2">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g2.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-3" data-type="cat-item-1">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g3.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g3.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g4.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g4.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-5" data-type="cat-item-4">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g5.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g5.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-3">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g6.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g6.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g7.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g7.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-5" data-type="cat-item-4">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g8.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g8.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-3">
+                    <span class="image-block">
+                        <a class="image-zoom" href="images/g9.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="images/g9.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
+                        </a>
+                    </span>
+                </li>
+            </ul>
+            <!--end portfolio-area -->
         </div>
+        <!-- //gallery container -->
     </section>
-    <!-- //courses -->
+    <!-- //portfolio -->
     <!-- footer top -->
     <div class="footer-top py-5">
         <div class="container">
@@ -293,7 +244,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                 </a>
                             </li>
                             <li>
-                                <a href="lab.htnl" class="nav-link py-0">
+                                <a href="lab.html" class="nav-link py-0">
                                     Lab
                                 </a>
                             </li>
@@ -411,11 +362,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         </div>
     </footer>
     <!-- //footer -->
-    <!-- //footer -->
     <!-- js-->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/jquery-2.2.3.min.js"></script>
     <!-- loading-gif Js -->
-    <script src="js/modernizr.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/modernizr.js"></script>
     <script>
         //paste this code under head tag or in a seperate js file.
         // Wait for window load
@@ -426,13 +376,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     </script>
     <!--// loading-gif Js -->
     <!-- Multiple select filter using jQuery -->
-    <script src="js/custom-select.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/custom-select.js"></script>
     <!-- //Multiple select filter using jQuery -->
-    <!-- js-->
     <!-- start-smooth-scrolling -->
-    <script src="js/move-top.js">
+    <script src="<?php echo base_url() ?>assets/front/js/move-top.js">
     </script>
-    <script src="js/easing.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/easing.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -463,11 +412,16 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
         });
     </script>
-    <script src="js/SmoothScroll.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/SmoothScroll.min.js"></script>
     <!-- //smooth-scrolling-of-move-up -->
-    <script src="js/gridview.js"></script>
+    <!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
+    <script src="<?php echo base_url() ?>assets/front/js/jquery-1.7.2.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/jquery.quicksand.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/script.js"></script>
+    <script src="<?php echo base_url() ?>assets/front/js/jquery.prettyPhoto.js"></script>
+    <!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js">
+    <script src="<?php echo base_url() ?>assets/front/js/bootstrap.js">
     </script>
     <!-- //Bootstrap Core JavaScript -->
 </body>

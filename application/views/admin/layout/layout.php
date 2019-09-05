@@ -61,7 +61,7 @@
                     <a href="#"><i class="fa fa-cog fa-lg"></i> Home Settings <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="about">
-                    <li><a href="<?php echo base_url() ?>manage-slider.html">Slider Management</a></li>
+                    <!-- <li><a href="<?php echo base_url() ?>manage-slider.html">Slider Management</a></li> -->
                     <li><a href="<?php echo base_url() ?>manage-news.html">News Update</a></li>
                 </ul>
 
@@ -152,6 +152,10 @@
 
                 <li <?php if ($this->uri->segment(1) == "create-publication" || $this->uri->segment(1) == "manage-publication") : ?> class="active" <?php endif ?>>
                     <a href="<?php echo base_url() ?>manage-publication.html"><i class="fa fa-copy fa-lg"></i> Publication Management</a>
+                </li>
+
+                <li <?php if ($this->uri->segment(1) == "create-group" || $this->uri->segment(1) == "manage-group") : ?> class="active" <?php endif ?>>
+                    <a href="<?php echo base_url() ?>manage-group.html"><i class="fa fa-copy fa-lg"></i> Group Management</a>
                 </li>
 
                 <li class="">
@@ -769,4 +773,4 @@
     });
 </script>
 
-</html> 
+</html>

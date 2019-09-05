@@ -4,6 +4,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 // Forntend
 $route['default_controller'] = 'welcome';
 $route['index'] = 'welcome/index';
+$route['research'] = 'welcome/research';
+$route['publication'] = 'welcome/publication';
+$route['lab'] = 'welcome/lab';
 $route['404_override'] = 'welcome/pageNotFound';
 $route['translate_uri_dashes'] = false;
 
@@ -24,3 +27,6 @@ $route['create-research'] = 'admin/reseach_managment/create';
 
 $route['manage-publication'] = 'admin/publication_managment/index';
 $route['create-publication'] = 'admin/publication_managment/create';
+
+$route['manage-group'] = 'admin/group_managment/index';
+$route['create-group'] = 'admin/group_managment/create';
