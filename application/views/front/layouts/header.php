@@ -50,7 +50,7 @@
               <a class="hover-fill" href="<?php echo base_url() ?>research" data-txthover="Research">Research</a>
             </li>
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-              <a class="hover-fill" href="<?php echo base_url() ?>publication" data-txthover="Publications">Publications</a>
+              <a class="hover-fill" href="<?php echo base_url() ?>publication/2019" data-txthover="Publications">Publications</a>
             </li>
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
               <a class="hover-fill" href="<?php echo base_url() ?>lab" data-txthover="Lab">Lab</a>

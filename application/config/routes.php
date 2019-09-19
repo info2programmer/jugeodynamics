@@ -5,8 +5,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['index'] = 'welcome/index';
 $route['research'] = 'welcome/research';
-$route['publication'] = 'welcome/publication';
+$route['publication/(:any)'] = 'welcome/publication/$1';
 $route['lab'] = 'welcome/lab';
+$route['group'] = 'welcome/group';
+$route['contact'] = 'welcome/contact';
 $route['404_override'] = 'welcome/pageNotFound';
 $route['translate_uri_dashes'] = false;
 

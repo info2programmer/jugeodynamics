@@ -19,7 +19,7 @@
                 <?php elseif ($this->session->flashdata('success_message')) : ?>
                     <h4 class="alert alert-success"><?php echo $this->session->flashdata('success_message') ?></h4>
                 <?php endif ?>
-                <a class="btn btn-info" href="<?php echo base_url() ?>create-publication.html">ADD PUBLICATION</a>
+                <a class="btn btn-info" href="<?php echo base_url() ?>create-group.html">ADD GROUP</a>
             </div>
 
             <div class="col-md-12 col-sm-12">
@@ -28,28 +28,26 @@
                     <thead>
                         <tr>
                             <th style="background-color: #70d3f7;">Sl</th>
-                            <th style="background-color: #70d3f7;">Date</th>
-                            <th style="background-color: #70d3f7;">Title</th>
-                            <th style="background-color: #70d3f7;">Content</th>
-                            <th style="background-color: #70d3f7;">Type</th>
-                            <th style="background-color: #70d3f7;">Created</th>
+                            <th style="background-color: #70d3f7;">Name</th>
+                            <th style="background-color: #70d3f7;">Image</th>
+                            <th style="background-color: #70d3f7;">Link1</th>
+                            <th style="background-color: #70d3f7;">Link2</th>
                             <th style="background-color: #70d3f7;">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $i = 0 ?>
-                        <?php foreach ($publicationList as $list) : ?>
+                        <?php foreach ($groupList as $list) : ?>
                             <tr>
                                 <td><?php echo ++$i ?></td>
-                                <td><?php echo $list->date ?></td>
-                                <td><?php echo $list->title ?></td>
-                                <td><?php echo $list->content ?></td>
-                                <td><?php echo $list->categoy === 1 ? 'Under Review' : 'Published' ?></td>
-                                <td><?php echo $list->created ?></td>
+                                <td><?php echo $list->name ?></td>
+                                <td><img src="<?php echo base_url() ?>assets/front/group-image/<?php echo $list->image ?>" width="40" height="40" ></td>
+                                <td><?php echo $list->link1 ?></td>
+                                <td><?php echo $list->link2 ?></td>
                                 <td>
-                                    <a class="btn btn-danger btn-sm" href="<?php echo base_url() ?>admin/publication_managment/deletePublication/<?php echo $list->id ?>" onclick="return confirm('Are you want to delete this Publication?')">Delete</a>
-                                    <a class="btn btn-primary btn-sm" href="<?php echo base_url() ?>admin/publication_managment/editPublication/<?php echo $list->id ?>">Edit</a>
-                                    <a class="btn btn-warning btn-sm" href="<?php echo base_url() ?>admin/publication_managment/changePublicationStatus/<?php echo $list->id ?>/<?php if ($list->publisher) : ?>0<?php else : ?>1<?php endif ?>"><?php if ($list->publisher) : ?>Un-Publish Now<?php else : ?>Publish Now<?php endif ?> </a>
+                                    <a class="btn btn-danger btn-sm" href="<?php echo base_url() ?>admin/group_managment/deleteGroup/<?php echo $list->id ?>/<?php echo urlencode($list->image) ?>" onclick="return confirm('Are you want to delete this Group Member?')">Delete</a>
+                                    <a class="btn btn-primary btn-sm" href="<?php echo base_url() ?>admin/group_managment/editGroup/<?php echo $list->id ?>">Edit</a>
+                                    <a class="btn btn-warning btn-sm" href="<?php echo base_url() ?>admin/group_managment/changeGroupStatus/<?php echo $list->id ?>/<?php if ($list->publisher) : ?>0<?php else : ?>1<?php endif ?>"><?php if ($list->publisher) : ?>Un-Publish Now<?php else : ?>Publish Now<?php endif ?> </a>
                                 </td>
                             </tr>
                         <?php endforeach ?>
@@ -57,11 +55,10 @@
                     <tfoot>
                         <tr>
                             <th>Sl</th>
-                            <th>Date</th>
-                            <th>Title</th>
-                            <th>Content</th>
-                            <th>Type</th>
-                            <th>Created</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Link1</th>
+                            <th>Link2</th>
                             <th>Action</th>
                         </tr>
                     </tfoot>
