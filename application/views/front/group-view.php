@@ -34,7 +34,7 @@
                                 <img src="<?php echo base_url() ?>assets/front/group-image/<?php echo $list->image ?>" alt="<?php echo $list->name ?>" class="img-fluid" />
                                 <div class="box-content">
                                     <h3 class="title"><?php echo $list->name ?></h3>
-                                    <span class="post"><?php echo substr($list->about, 0, 150) . "....." ?></span>
+                                    <span class="post"><?php echo substr($list->about, 0, 150) . ".....<a class='badge badge-secondary' href='javascript:void(0)' onclick='getMemberDetails($list->id)' data-toggle='modal' data-target='#exampleModal'>Read More</a>" ?></span>
                                 </div>
                                 <ul class="icon">
                                     <li>

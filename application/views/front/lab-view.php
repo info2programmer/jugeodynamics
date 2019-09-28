@@ -3,7 +3,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Lab</title>
+    <title>LAB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Skill Point Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -39,78 +39,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <body>
     <div class="se-pre-con"></div>
     <!-- header -->
-    <header>
-
-        <div class="header-bottom">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light p-0">
-                    <h1><a class="navbar-brand" href="index.html">
-                            <img src="images/logo.png">
-                        </a></h1>
-                    <button class="navbar-toggler ml-lg-auto ml-sm-5" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- <ul class="navbar-nav text-center ml-auto">
-                                        <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
-                                            <a class="hover-fill" href="home.html" data-txthover="Home">Home</a>
-                                        </li>
-                                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                            <a class="hover-fill" href="about.html" data-txthover="About">about</a>
-                                        </li>
-                                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                            <a class="hover-fill" href="portfolio.html" data-txthover="Portfolio">Portfolio</a>
-                                        </li>
-                                        <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
-                                            <a class=" hover-fill" data-txthover="Pages" href="#" id="navbarDropdown" role="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Pages
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="hover-fill" href="services.html" data-txthover="Services">Services</a>
-                                                <a class="hover-fill" href="pricingplans.html" data-txthover="Pricing Plans">Pricing
-                                                    Plans</a>
-                                                <a class="hover-fill" href="courses.html" data-txthover="Courses">Courses</a>
-                                                <a class="hover-fill" href="single.html" data-txthover="Single Course">Single
-                                                    Course</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="hover-fill" href="team.html" data-txthover="Team">Team</a>
-                                                <a class="hover-fill" href="testimonials.html" data-txthover="Testimonials">Testimonials</a>
-                                                <a class="hover-fill" href="typography.html" data-txthover="Typography">Typography</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="hover-fill" href="contact.html" data-txthover="Contact">contact</a>
-                                        </li>
-                                    </ul> -->
-                        <ul class="navbar-nav text-center ml-auto">
-                            <li class="nav-item active  mr-lg-3 mt-lg-0 mt-4">
-                                <a class="hover-fill" href="index.html" data-txthover="Home">Home</a>
-                            </li>
-                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                <a class="hover-fill" href="research.html" data-txthover="Research">Research</a>
-                            </li>
-                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                <a class="hover-fill" href="publication.html"
-                                    data-txthover="Publications">Publications</a>
-                            </li>
-                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                <a class="hover-fill" href="lab.html" data-txthover="Lab">Lab</a>
-                            </li>
-                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
-                                <a class="hover-fill" href="group.html" data-txthover="Group">Group</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="hover-fill" href="contact.html" data-txthover="Contact">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <?php $this->load->view('front/layouts/header') ?>
     <!-- //header -->
     <!-- inner banner -->
     <div class="inner-banner-w3ls text-right d-flex align-items-center">
@@ -125,101 +54,27 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!-- //inner banner -->
-    <!-- portfolio -->
-    <section class="wthree-row w3-gallery py-sm-5 py-3">
-        <div class="container py-lg-5 py-3">
-            <div class="title-section pb-4">
-                <h3 class="main-title-agile">Lab</h3>
-                <div class="title-line">
-                </div>
-            </div>
-            <ul class="portfolio-categ filter my-md-5 my-3">
-                <li class="port-filter all active">
-                    <a href="#">All</a>
-                </li>
-                <li class="cat-item-1">
-                    <a href="#" title="Category 1">tab 1</a>
-                </li>
-                <li class="cat-item-2">
-                    <a href="#" title="Category 2">tab 2</a>
-                </li>
-                <li class="cat-item-3">
-                    <a href="#" title="Category 3">tab 3</a>
-                </li>
-                <li class="cat-item-4">
-                    <a href="#" title="Category 4">tab 4</a>
-                </li>
-            </ul>
-            <ul class="portfolio-area clearfix">
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-1">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g1.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-2" data-type="cat-item-2">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g2.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-3" data-type="cat-item-1">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g3.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g3.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g4.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g4.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-5" data-type="cat-item-4">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g5.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g5.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-3">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g6.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g6.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g7.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g7.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-5" data-type="cat-item-4">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g8.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g8.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-3">
-                    <span class="image-block">
-                        <a class="image-zoom" href="images/g9.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/g9.jpg" class="img-fluid w3layouts agileits" alt="skillpoint-img">
-                        </a>
-                    </span>
-                </li>
-            </ul>
-            <!--end portfolio-area -->
+    <section class="courses-sec py-5">
+    <div class="container py-lg-5">
+      <div class="title-section pb-4">
+        <div class="row">
+          <div class="col md-6">
+            
+          </div>
+          
         </div>
-        <!-- //gallery container -->
-    </section>
-    <!-- //portfolio -->
+
+        <div class="title-line"></div>
+
+      </div>
+
+      <div class="well txtbasic1">
+      <h3>Coming Soon</h3>
+        
+      </div>
+
+    </div>
+  </section>
     <!-- footer top -->
     <div class="footer-top py-5">
         <div class="container">

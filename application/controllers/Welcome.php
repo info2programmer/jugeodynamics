@@ -22,21 +22,9 @@ class Welcome extends CI_Controller
 		$this->load->view('front/research-view', $data);
 	}
 
-	public function publication($date = '')
+	public function publication()
 	{
-		if ($date == "") {
-			$data = array(
-				'publicationList' => $this->db->query("SELECT * FROM ju_publication WHERE date=2019 AND publisher=1 ORDER BY id DESC")->result(),
-				'year' => 2019
-			);
-		} else {
-			$data = array(
-				'publicationList' => $this->db->query("SELECT * FROM ju_publication WHERE date=$date AND publisher=1 ORDER BY id DESC")->result(),
-				'year' => $date
-			);
-		}
-
-		$this->load->view('front/publication-view', $data);
+		$this->load->view('front/publication-view');
 	}
 
 	public function lab()
