@@ -22,11 +22,20 @@ class Welcome extends CI_Controller
 		$this->load->view('front/research-view', $data);
 	}
 
-	public function publication()
+	public function publication($date = '')
 	{
-		$data = array(
-			'publicationList' => $this->db->query("SELECT * FROM ju_publication WHERE publisher=1 ORDER BY id DESC")->result()
-		);
+		if ($date == "") {
+			$data = array(
+				'publicationList' => $this->db->query("SELECT * FROM ju_publication WHERE date=2019 AND publisher=1 ORDER BY id DESC")->result(),
+				'year' => 2019
+			);
+		} else {
+			$data = array(
+				'publicationList' => $this->db->query("SELECT * FROM ju_publication WHERE date=$date AND publisher=1 ORDER BY id DESC")->result(),
+				'year' => $date
+			);
+		}
+
 		$this->load->view('front/publication-view', $data);
 	}
 
@@ -38,5 +47,25 @@ class Welcome extends CI_Controller
 	public function pageNotFound()
 	{
 		$this->load->view('front/page-not-found-view');
+	}
+	public function group($memberType)
+	{
+		$data = array(
+			'groupList' =>  $this->db->query("SELECT * FROM ju_group WHERE publisher=1 AND memberType=$memberType ORDER BY id DESC")->result()
+		);
+		$this->load->view('front/group-view', $data);
+	}
+
+	public function contact()
+	{
+		$this->load->view('front/contact-view');
+	}
+
+	public function memberDetails()
+	{
+		$memberId = $this->input->post('memberId', true);
+		$memberDetails = $this->db->query("SELECT * FROM ju_group WHERE id = $memberId")->row();
+
+		echo json_encode(['memberDetails' => $memberDetails]);
 	}
 }
