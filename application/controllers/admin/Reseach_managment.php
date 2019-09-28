@@ -31,7 +31,7 @@ class Reseach_managment extends CI_Controller
     {
         if ($this->input->post('btnSubmit') == "submit") {
             $this->form_validation->set_rules('txtTitle', 'Research Title', 'trim|required');
-            $this->form_validation->set_rules('txtContent', 'Content Line 1', 'trim|required');
+            $this->form_validation->set_rules('txtContent', 'Content Line 1', 'trim');
 
 
             if ($this->form_validation->run() == false) {
@@ -39,9 +39,8 @@ class Reseach_managment extends CI_Controller
                 redirect('create-research', 'refresh');
             } else {
                 $data = array(
-                    'image' => $this->common_model->upload_image('imageFile', './assets/front/research-image/', 'create-research'),
                     'title' => $this->input->post('txtTitle', true),
-                    'content' => $this->input->post('txtContent', true),
+                    'content' => $this->input->post('txtContent', false),
                     'created' => date('Y-m-d h.i.s a'),
                     'publisher' => 1
                 );
@@ -61,11 +60,9 @@ class Reseach_managment extends CI_Controller
 
 
     // This function for delete Research
-    public function deleteResearch($id, $fileImage)
+    public function deleteResearch($id)
     {
-        $fileName = urldecode($fileImage);
         $this->common_model->delete_record('id', $id, 'ju_research');
-        unlink("assets/front/research-image/" . $fileName);
         $this->session->set_flashdata('error_message', 'Research Image Deleted');
         redirect('manage-research', 'refresh');
     }
@@ -85,7 +82,7 @@ class Reseach_managment extends CI_Controller
     {
         if ($this->input->post('btnSubmit') == "submit") {
             $this->form_validation->set_rules('txtTitle', 'Research Title', 'trim|required');
-            $this->form_validation->set_rules('txtContent', 'Content Line 1', 'trim|required');
+            $this->form_validation->set_rules('txtContent', 'Content Line 1', 'trim');
 
 
 
@@ -93,15 +90,9 @@ class Reseach_managment extends CI_Controller
                 $this->session->set_flashdata('error_message', validation_errors());
                 redirect('home/editResearch/' . $id, 'refresh');
             } else {
-                $image = $this->input->post('txtOldImage');
-                if (!empty($_FILES['imageFile']['tmp_name'])) {
-                    unlink("assets/front/research-image/" . $image);
-                    $image = $this->common_model->upload_image('imageFile', './assets/front/research-image/', 'home/editResearch/' . $id);
-                }
                 $data = array(
-                    'image' => $image,
                     'title' => $this->input->post('txtTitle', true),
-                    'content' => $this->input->post('txtContent', true),
+                    'content' => $this->input->post('txtContent', false),
                     'created' => date('Y-m-d h.i.s a'),
                 );
                 $this->common_model->updateData($id, 'id', $data, 'ju_research');

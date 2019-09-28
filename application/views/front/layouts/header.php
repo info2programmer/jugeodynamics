@@ -52,6 +52,19 @@
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
               <a class="hover-fill" href="<?php echo base_url() ?>publication/2019" data-txthover="Publications">Publications</a>
             </li>
+            <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
+              <a class=" hover-fill" data-txthover="Group" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Group
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <?php $data = $this->db->query("SELECT * FROM ju_grouptype")->result();
+                foreach ($data as $list) {
+                  echo "<a class='hover-fill' href='" . base_url() . "group/" . $list->id . "' data-txthover='" . $list->group_name . "'>" . $list->group_name . "</a>";
+                }
+                ?>
+
+              </div>
+            </li>
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
               <a class="hover-fill" href="<?php echo base_url() ?>lab" data-txthover="Lab">Lab</a>
             </li>

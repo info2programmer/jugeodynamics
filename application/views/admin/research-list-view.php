@@ -28,7 +28,6 @@
                     <thead>
                         <tr>
                             <th style="background-color: #70d3f7;">Sl</th>
-                            <th style="background-color: #70d3f7;">Image</th>
                             <th style="background-color: #70d3f7;">Title</th>
                             <th style="background-color: #70d3f7;">Content</th>
                             <th style="background-color: #70d3f7;">Created / Modified</th>
@@ -40,12 +39,11 @@
                         <?php foreach ($researchList as $list) : ?>
                         <tr>
                             <td><?php echo ++$i ?></td>
-                            <td><img src="<?php echo base_url() ?>assets/front/research-image/<?php echo $list->image ?>" width="200px"></td>
                             <td><?php echo $list->title ?></td>
                             <td><?php echo $list->content ?></td>
                             <td><?php echo $list->created ?></td>
                             <td>
-                                <a class="btn btn-danger btn-sm" href="<?php echo base_url() ?>admin/reseach_managment/deleteResearch/<?php echo $list->id ?>/<?php echo urlencode($list->image) ?>" onclick="return confirm('Are you want to delete this Research?')">Delete</a>
+                                <a class="btn btn-danger btn-sm" href="<?php echo base_url() ?>admin/reseach_managment/deleteResearch/<?php echo $list->id ?>/" onclick="return confirm('Are you want to delete this Research?')">Delete</a>
                                 <a class="btn btn-primary btn-sm" href="<?php echo base_url() ?>admin/reseach_managment/editResearch/<?php echo $list->id ?>">Edit</a>
                                 <a class="btn btn-warning btn-sm" href="<?php echo base_url() ?>admin/reseach_managment/changeResearchStatus/<?php echo $list->id ?>/<?php if ($list->publisher) : ?>0<?php else : ?>1<?php endif ?>"><?php if ($list->publisher) : ?>Un-Publish Now<?php else : ?>Publish Now<?php endif ?> </a>
                             </td>
@@ -55,7 +53,6 @@
                     <tfoot>
                         <tr>
                             <th>Sl</th>
-                            <th>Image</th>
                             <th>Title</th>
                             <th>Content</th>
                             <th>Created / Modified</th>

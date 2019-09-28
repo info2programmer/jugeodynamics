@@ -68,24 +68,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
           <?php foreach ($researchList as $list) : ?>
             <div class="item list-group-item col-lg-4 thumb-last">
               <div class="thumbnail card">
-                <div class="img-event">
-                  <img class="group list-group-image img-fluid" src="<?php echo base_url() ?>assets/front/research-image/<?php echo $list->image ?>" alt="" />
-                </div>
+                
                 <div class="caption card-body">
                   <h4 class="group card-title inner list-group-item-heading">
                     <?php echo $list->title ?></h4>
                   <p class="group inner list-group-item-text">
                     <?php echo $list->content ?>
                   </p>
-                  <!-- <div class="row">
-                                    <div class="col-6">
-                                        <p class="lead">
-                                            $29.00</p>
-                                    </div>
-                                    <div class="col-6">
-                                        <a class="btn btn-course" href="single.html">View More</a>
-                                    </div>
-                                </div> -->
                 </div>
               </div>
             </div>
