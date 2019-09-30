@@ -25,29 +25,6 @@
             <div class="col-md-12 col-sm-12">
                 <h4>&nbsp;</h4>
                 <form action="" method="post" enctype="multipart/form-data">
-                    <?php if (isset($researchData)) : ?>
-                    <div class="row">
-                        <div class="col-md-3"><label for="">
-                                <h4>Old Image</h4>
-                            </label></div>
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <img src="<?php echo base_url() ?>assets/front/research-image/<?php echo $researchData->image ?>" alt="" srcset="" width="200">
-                                <input type="hidden" name="txtOldImage" value="<?php echo $researchData->image ?>">
-                            </div>
-                        </div>
-                    </div>
-                    <?php endif ?>
-                    <div class="row">
-                        <div class="col-md-3"><label for="">
-                                <h4>Research Image</h4>
-                            </label></div>
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <input type="file" value="" name="imageFile" class="form-control" <?php if (!isset($researchData)) : ?>required<?php endif ?> />
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col-md-3"><label for="">
                                 <h4>Title</h4>
@@ -64,7 +41,7 @@
                             </label></div>
                         <div class="col-md-9">
                             <div class="form-group">
-                                <textarea id="editor" name="txtContent" required><?php if (isset($researchData)) : ?><?php echo $researchData->content ?><?php endif ?></textarea>
+                                <textarea id="editor" name="txtContent" ><?php if (isset($researchData)) : ?><?php echo $researchData->content ?><?php endif ?></textarea>
                             </div>
                         </div>
                     </div>

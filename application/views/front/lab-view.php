@@ -3,7 +3,11 @@
 <html lang="zxx">
 
 <head>
+<<<<<<< HEAD
     <title>Lab</title>
+=======
+    <title>LAB</title>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Skill Point Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -39,6 +43,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <body>
     <div class="se-pre-con"></div>
     <!-- header -->
+<<<<<<< HEAD
     <header>
 
         <div class="header-bottom">
@@ -111,6 +116,9 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </header>
+=======
+    <?php $this->load->view('front/layouts/header') ?>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
     <!-- //header -->
     <!-- inner banner -->
     <div class="inner-banner-w3ls text-right d-flex align-items-center">
@@ -125,6 +133,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!-- //inner banner -->
+<<<<<<< HEAD
     <!-- portfolio -->
     <section class="wthree-row w3-gallery py-sm-5 py-3">
         <div class="container py-lg-5 py-3">
@@ -220,6 +229,29 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <!-- //gallery container -->
     </section>
     <!-- //portfolio -->
+=======
+    <section class="courses-sec py-5">
+    <div class="container py-lg-5">
+      <div class="title-section pb-4">
+        <div class="row">
+          <div class="col md-6">
+            
+          </div>
+          
+        </div>
+
+        <div class="title-line"></div>
+
+      </div>
+
+      <div class="well txtbasic1">
+      <h3>Coming Soon</h3>
+        
+      </div>
+
+    </div>
+  </section>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
     <!-- footer top -->
     <div class="footer-top py-5">
         <div class="container">

@@ -39,6 +39,10 @@ class Group_managment extends CI_Controller
       } else {
         $data = array(
           'name' => $this->input->post('name', true),
+<<<<<<< HEAD
+=======
+          'memberType' => $this->input->post('memberType', true),
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
           'image' => $this->common_model->upload_image('imageFile', './assets/front/group-image/', 'create-group'),
           'about' => $this->input->post('about'),
           'link1' => $this->input->post('link1', true),
@@ -53,7 +57,12 @@ class Group_managment extends CI_Controller
     $data = array(
       'title' => "Create new group",
       'pageName' => 'NEW GROUP MEMBER',
+<<<<<<< HEAD
       'mainContent' => 'admin/add-edit-group-view'
+=======
+      'mainContent' => 'admin/add-edit-group-view',
+      'memberType' => $this->db->query("SELECT * FROM `ju_grouptype`")->result(),
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
     );
     $this->load->view('admin/layout/layout', $data);
   }
@@ -61,7 +70,11 @@ class Group_managment extends CI_Controller
 
 
   // This function for delete Group
+<<<<<<< HEAD
   public function deleteGroup($id,$image)
+=======
+  public function deleteGroup($id, $image)
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
   {
     $this->common_model->delete_record('id', $id, 'ju_group');
     unlink("assets/front/group-image/" . $image);
@@ -93,17 +106,31 @@ class Group_managment extends CI_Controller
       } else {
         $image = $this->input->post('txtOldImage');
         if (!empty($_FILES['imageFile']['tmp_name'])) {
+<<<<<<< HEAD
             unlink("assets/front/group-image/" . $image);
             $image = $this->common_model->upload_image('imageFile', './assets/front/group-image/', 'home/editGroup/' . $id);
+=======
+          unlink("assets/front/group-image/" . $image);
+          $image = $this->common_model->upload_image('imageFile', './assets/front/group-image/', 'home/editGroup/' . $id);
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
         }
 
         $data = array(
           'name' => $this->input->post('name', true),
+<<<<<<< HEAD
+=======
+          'memberType' => $this->input->post('memberType', true),
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
           'image' =>  $image,
           'about' => $this->input->post('about'),
           'link1' => $this->input->post('link1', true),
           'link2' => $this->input->post('link2', true),
+<<<<<<< HEAD
           'publisher' => 1
+=======
+          'publisher' => 1,
+
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
         );
         $this->common_model->updateData($id, 'id', $data, 'ju_group');
         $this->session->set_flashdata('success_message', 'Group Edited Successfully');
@@ -114,7 +141,13 @@ class Group_managment extends CI_Controller
       'title' => "Update group",
       'pageName' => 'EDIT GROUP',
       'mainContent' => 'admin/add-edit-group-view',
+<<<<<<< HEAD
       'groupData' => $this->common_model->find_data(['name' => 'ju_group'], 'row', '', ['id' => $id])
+=======
+      'groupData' => $this->common_model->find_data(['name' => 'ju_group'], 'row', '', ['id' => $id]),
+
+      'memberType' => $this->db->query("SELECT * FROM `ju_grouptype`")->result(),
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
     );
     $this->load->view('admin/layout/layout', $data);
   }

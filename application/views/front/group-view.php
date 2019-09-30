@@ -27,13 +27,19 @@
                 </div>
             </div>
             <div class="d-flex team-agile-row pt-sm-5 pt-3">
+<<<<<<< HEAD
                 <?php if(count($groupList)): ?>
                     <?php foreach($groupList as $list): ?>
+=======
+                <?php if (count($groupList)) : ?>
+                    <?php foreach ($groupList as $list) : ?>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                         <div class="col-lg-4 col-md-6 mt-md-0 mt-4 mb-4">
                             <div class="box20">
                                 <img src="<?php echo base_url() ?>assets/front/group-image/<?php echo $list->image ?>" alt="<?php echo $list->name ?>" class="img-fluid" />
                                 <div class="box-content">
                                     <h3 class="title"><?php echo $list->name ?></h3>
+<<<<<<< HEAD
                                     <span class="post"><?php echo $list->about ?></span>
                                 </div>
                                 <ul class="icon">
@@ -50,18 +56,96 @@
                                             <i class="fa fa-link"></i>
                                         </a>
                                     </li>
+=======
+                                    <span class="post"><?php echo substr($list->about, 0, 150) . ".....<a class='badge badge-secondary' href='javascript:void(0)' onclick='getMemberDetails($list->id)' data-toggle='modal' data-target='#exampleModal'>Read More</a>" ?></span>
+                                </div>
+                                <ul class="icon">
+                                    <li>
+                                        <a onclick="getMemberDetails(<?php echo $list->id ?>)" data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fa fa-info-circle"></i>
+                                        </a>
+                                    </li>
+                                    <?php if ($list->link1) : ?>
+                                        <li>
+                                            <a href="<?php echo $list->link1 ?>">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                        </li>
+                                    <?php endif ?>
+                                    <?php if ($list->link2) : ?>
+                                        <li>
+                                            <a href="<?php echo $list->link2 ?>">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </li>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                                     <?php endif ?>
                                 </ul>
                             </div>
                         </div>
                     <?php endforeach ?>
+<<<<<<< HEAD
                 <?php else: ?>
                 <div class="col-md-12">
                     <h3>No Members Found</h3>
                 </div>
+=======
+                <?php else : ?>
+                    <div class="col-md-12">
+                        <h3>No Members Found</h3>
+                    </div>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                 <?php endif ?>
             </div>
         </div>
     </section>
+<<<<<<< HEAD
     <?php $this->load->view('front/layouts/footer');
   ?>
+=======
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="se-pre-con" id="spiner"></div>
+                        <div id="modalContent"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php $this->load->view('front/layouts/footer');
+    ?>
+    <script>
+        getMemberDetails = (id) => {
+            $('#spiner').attr('style', 'display : block');
+            $.ajax({
+                type: "post",
+                url: "<?php echo base_url() ?>welcome/memberDetails",
+                data: {
+                    'memberId': id
+                },
+                dataType: "json",
+                beforeSend: function(response) {
+                    $('#spiner').attr('style', 'display : block');
+                }
+            }).done(rply => {
+                console.log(rply)
+                $('#spiner').attr('style', 'display : none');
+                $('#modalContent').html(rply.memberDetails.about);
+                $('#exampleModalLabel').html(rply.memberDetails.name);
+            });
+        }
+    </script>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28

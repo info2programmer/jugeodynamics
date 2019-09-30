@@ -2,11 +2,18 @@
 <html lang="zxx">
 
 <head>
+<<<<<<< HEAD
   <title>Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="keywords" content="Skill Point Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+=======
+  <title>Publications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
   <script>
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);
@@ -58,6 +65,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
       <div class="title-section pb-4">
         <div class="row">
           <div class="col md-6">
+<<<<<<< HEAD
             <h3 class="main-title-agile">All <?php echo $year ?> Publications</h3>
           </div>
           <div class="col md-6">
@@ -116,10 +124,19 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
         <div class="title-line">
         </div>
+=======
+            
+          </div>
+          
+        </div>
+
+        <div class="title-line"></div>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
 
       </div>
 
       <div class="well txtbasic1">
+<<<<<<< HEAD
         <?php if (COUNT($publicationList) > 0) : ?>
           <?php foreach ($publicationList as $list) : ?>
             <div class="row">
@@ -133,6 +150,30 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <?php else : ?>
           <h4 align="center">No Data Found</h4>
         <?php endif; ?>
+=======
+      <?php 
+        $date = $this->db->query("SELECT DISTINCT(date) FROM `ju_publication`")->result();
+        foreach($date as $list){
+          echo '<div class="row">
+              <div class="col md-6">
+                <h3 class="main-title-agile" style="text-align: left;">'.$list->date.' Publications</h3>
+              </div>
+            </div>
+            <div class="title-line" style="width: 50%;"></div><br><br>';
+          $yearData = $this->db->query("SELECT * FROM ju_publication WHERE `date` = '$list->date'")->result();
+          foreach($yearData as $list1){
+            echo '<div class="row">
+            <div class="col-md-12 text-left">
+              <h5> '. $list1->title .'</h5>
+              <h6 class="text-info"> '. $list1->content .'</h6>
+            </div>
+          </div>
+          <hr>';
+          }
+        }
+      ?>
+        
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
       </div>
 
     </div>

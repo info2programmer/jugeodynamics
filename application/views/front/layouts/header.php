@@ -50,13 +50,47 @@
               <a class="hover-fill" href="<?php echo base_url() ?>research" data-txthover="Research">Research</a>
             </li>
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+<<<<<<< HEAD
               <a class="hover-fill" href="<?php echo base_url() ?>publication/2019" data-txthover="Publications">Publications</a>
+=======
+              <a class="hover-fill" href="<?php echo base_url() ?>publication" data-txthover="Publications">Publications</a>
+            </li>
+            <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
+              <a class=" hover-fill" data-txthover="Group" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Group
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <?php $data = $this->db->query("SELECT * FROM ju_grouptype")->result();
+                foreach ($data as $list) {
+                  echo "<a class='hover-fill' href='" . base_url() . "group/" . $list->id . "' data-txthover='" . $list->group_name . "'>" . $list->group_name . "</a>";
+                }
+                ?>
+
+              </div>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
             </li>
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
               <a class="hover-fill" href="<?php echo base_url() ?>lab" data-txthover="Lab">Lab</a>
             </li>
             <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+<<<<<<< HEAD
               <a class="hover-fill" href="<?php echo base_url() ?>group" data-txthover="Group">Group</a>
+=======
+              <!-- <a class="hover-fill" href="<?php echo base_url() ?>group" data-txthover="Group">Group</a> -->
+            <li class="nav-item dropdown mr-lg-3 my-lg-0 my-4">
+              <a class=" hover-fill" data-txthover="Group" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Group
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <?php $data = $this->db->query("SELECT * FROM ju_grouptype")->result();
+                foreach ($data as $list) {
+                  echo "<a class='hover-fill' href='" . base_url() . "group/" . $list->id . "' data-txthover='" . $list->group_name . "'>" . $list->group_name . "</a>";
+                }
+                ?>
+
+              </div>
+            </li>
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
             </li>
             <li class="nav-item">
               <a class="hover-fill" href="<?php echo base_url() ?>contact" data-txthover="Contact">contact</a>

@@ -5,9 +5,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['index'] = 'welcome/index';
 $route['research'] = 'welcome/research';
+<<<<<<< HEAD
 $route['publication/(:any)'] = 'welcome/publication/$1';
 $route['lab'] = 'welcome/lab';
 $route['group'] = 'welcome/group';
+=======
+$route['publication'] = 'welcome/publication/';
+$route['lab'] = 'welcome/lab';
+$route['group/(:num)'] = 'welcome/group/$1';
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
 $route['contact'] = 'welcome/contact';
 $route['404_override'] = 'welcome/pageNotFound';
 $route['translate_uri_dashes'] = false;

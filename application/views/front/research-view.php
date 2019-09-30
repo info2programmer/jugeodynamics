@@ -68,15 +68,20 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
           <?php foreach ($researchList as $list) : ?>
             <div class="item list-group-item col-lg-4 thumb-last">
               <div class="thumbnail card">
+<<<<<<< HEAD
                 <div class="img-event">
                   <img class="group list-group-image img-fluid" src="<?php echo base_url() ?>assets/front/research-image/<?php echo $list->image ?>" alt="" />
                 </div>
+=======
+                
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                 <div class="caption card-body">
                   <h4 class="group card-title inner list-group-item-heading">
                     <?php echo $list->title ?></h4>
                   <p class="group inner list-group-item-text">
                     <?php echo $list->content ?>
                   </p>
+<<<<<<< HEAD
                   <!-- <div class="row">
                                     <div class="col-6">
                                         <p class="lead">
@@ -86,6 +91,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                         <a class="btn btn-course" href="single.html">View More</a>
                                     </div>
                                 </div> -->
+=======
+>>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                 </div>
               </div>
             </div>
