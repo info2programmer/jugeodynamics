@@ -16,15 +16,9 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <?php if ($this->session->flashdata('error_message')) : ?>
-<<<<<<< HEAD
-                <h4 class="alert alert-warning"><?php echo $this->session->flashdata('error_message') ?></h4>
-                <?php elseif ($this->session->flashdata('success_message')) : ?>
-                <h4 class="alert alert-success"><?php echo $this->session->flashdata('success_message') ?></h4>
-=======
                     <h4 class="alert alert-warning"><?php echo $this->session->flashdata('error_message') ?></h4>
                 <?php elseif ($this->session->flashdata('success_message')) : ?>
                     <h4 class="alert alert-success"><?php echo $this->session->flashdata('success_message') ?></h4>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                 <?php endif ?>
             </div>
 
@@ -42,27 +36,6 @@
                         </div>
                     </div>
                     <?php if (isset($groupData)) : ?>
-<<<<<<< HEAD
-                    <div class="row">
-                        <div class="col-md-3"><label for="">
-                                <h4>Old Image</h4>
-                            </label></div>
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <img src="<?php echo base_url() ?>assets/front/group-image/<?php echo $groupData->image ?>" alt="" srcset="" width="200">
-                                <input type="hidden" name="txtOldImage" value="<?php echo $groupData->image ?>">
-                            </div>
-                        </div>
-                    </div>
-                    <?php endif ?>
-                    <div class="row">
-                        <div class="col-md-3"><label for="">
-                                <h4>Member Image</h4>
-                            </label></div>
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <input type="file" value="" name="imageFile" class="form-control" <?php if (!isset($groupData)) : ?>required<?php endif ?> />
-=======
                         <div class="row">
                             <div class="col-md-3"><label for="">
                                     <h4>Old Image</h4>
@@ -93,20 +66,11 @@
                             <div class="form-group">
                                 <textarea name="about" class="form-control"><?php if (isset($groupData)) : ?><?php echo $groupData->about ?><?php endif ?></textarea>
                                 <div id="countElement"></div>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3"><label for="">
-<<<<<<< HEAD
-                                <h4>About <sup>150 character max</sup></h4>
-                            </label></div>
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <textarea maxlength='150' name="about" class="form-control"><?php if (isset($groupData)) : ?><?php echo $groupData->about ?><?php endif ?></textarea>
-                                <div id="countElement"></div>
-=======
                                 <h4>Member Type</h4>
                             </label></div>
                         <div class="col-md-9">
@@ -117,7 +81,6 @@
                                         <option value="<?php echo $list->id ?>" <?php if (isset($groupData) && $list->id == $groupData->memberType) : ?>selected<?php endif ?>><?php echo $list->group_name ?></option>
                                     <?php endforeach ?>
                                 </select>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                             </div>
                         </div>
                     </div>
@@ -127,11 +90,7 @@
                             </label></div>
                         <div class="col-md-9">
                             <div class="form-group">
-<<<<<<< HEAD
-                                <input type="text" value="<?php if (isset($groupData)) : ?><?php echo $groupData->link1 ?><?php endif ?>" name="link1" class="form-control"  />
-=======
                                 <input type="text" value="<?php if (isset($groupData)) : ?><?php echo $groupData->link1 ?><?php endif ?>" name="link1" class="form-control" />
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                             </div>
                         </div>
                     </div>
@@ -142,19 +101,11 @@
                             </label></div>
                         <div class="col-md-9">
                             <div class="form-group">
-<<<<<<< HEAD
-                                <input type="text" value="<?php if (isset($groupData)) : ?><?php echo $groupData->link2 ?><?php endif ?>" name="link2" class="form-control"  />
-                            </div>
-                        </div>
-                    </div>
-                    
-=======
                                 <input type="text" value="<?php if (isset($groupData)) : ?><?php echo $groupData->link2 ?><?php endif ?>" name="link2" class="form-control" />
                             </div>
                         </div>
                     </div>
 
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
 
                     <div class="row">
                         <div class="col-md-3">
@@ -168,23 +119,5 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-    <script>
-      var textarea = document.querySelector("textarea");
-
-        textarea.addEventListener("input", function(){
-            var maxlength = this.getAttribute("maxlength");
-            var currentLength = this.value.length;
-
-            if( currentLength >= maxlength ){
-                $('#countElement').html("You have reached the maximum number of characters.");
-            }else{
-                $('#countElement').html(maxlength - currentLength + " chars left");
-            }
-        });
-    </script>
-</section> 
-=======
 
 </section>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28

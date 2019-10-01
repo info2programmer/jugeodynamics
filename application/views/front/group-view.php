@@ -27,36 +27,13 @@
                 </div>
             </div>
             <div class="d-flex team-agile-row pt-sm-5 pt-3">
-<<<<<<< HEAD
-                <?php if(count($groupList)): ?>
-                    <?php foreach($groupList as $list): ?>
-=======
                 <?php if (count($groupList)) : ?>
                     <?php foreach ($groupList as $list) : ?>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                         <div class="col-lg-4 col-md-6 mt-md-0 mt-4 mb-4">
                             <div class="box20">
                                 <img src="<?php echo base_url() ?>assets/front/group-image/<?php echo $list->image ?>" alt="<?php echo $list->name ?>" class="img-fluid" />
                                 <div class="box-content">
                                     <h3 class="title"><?php echo $list->name ?></h3>
-<<<<<<< HEAD
-                                    <span class="post"><?php echo $list->about ?></span>
-                                </div>
-                                <ul class="icon">
-                                    <?php if($list->link1): ?>
-                                    <li>
-                                        <a href="<?php echo $list->link1 ?>">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                    </li>
-                                    <?php endif ?>
-                                    <?php if($list->link2): ?>
-                                    <li>
-                                        <a href="<?php echo $list->link2 ?>">
-                                            <i class="fa fa-link"></i>
-                                        </a>
-                                    </li>
-=======
                                     <span class="post"><?php echo substr($list->about, 0, 150) . ".....<a class='badge badge-secondary' href='javascript:void(0)' onclick='getMemberDetails($list->id)' data-toggle='modal' data-target='#exampleModal'>Read More</a>" ?></span>
                                 </div>
                                 <ul class="icon">
@@ -78,31 +55,19 @@
                                                 <i class="fa fa-link"></i>
                                             </a>
                                         </li>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                                     <?php endif ?>
                                 </ul>
                             </div>
                         </div>
                     <?php endforeach ?>
-<<<<<<< HEAD
-                <?php else: ?>
-                <div class="col-md-12">
-                    <h3>No Members Found</h3>
-                </div>
-=======
                 <?php else : ?>
                     <div class="col-md-12">
                         <h3>No Members Found</h3>
                     </div>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
                 <?php endif ?>
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-    <?php $this->load->view('front/layouts/footer');
-  ?>
-=======
     <section>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,4 +113,3 @@
             });
         }
     </script>
->>>>>>> 76a11d6af723bb98dda5979d3280b50598cd0f28
