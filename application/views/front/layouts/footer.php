@@ -7,35 +7,35 @@
             <div class="footer-top-agileits">
               <ul class="list-agileits d-flex">
                 <li>
-                  <a href="index.html" class="nav-link py-0 pl-0">
+                  <a href="<?php echo base_url() ?>" class="nav-link py-0 pl-0">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="   " class="nav-link py-0">
+                  <a href="<?php echo base_url() ?>research" class="nav-link py-0">
                     Research
                   </a>
                 </li>
                 <li>
-                  <a href="publication.html" class="nav-link py-0">
+                  <a href="<?php echo base_url() ?>publication" class="nav-link py-0">
                     Publications
                   </a>
                 </li>
                 <li>
-                  <a href="lab.htnl" class="nav-link py-0">
+                  <a href="<?php echo base_url() ?>lab" class="nav-link py-0">
                     Lab
                   </a>
                 </li>
               </ul>
               <ul class="list-agileits d-flex">
                 <li>
-                  <a href="group.html" class="nav-link py-0 pl-0">
+                  <a href="<?php echo base_url() ?>group/1" class="nav-link py-0 pl-0">
                     Group
                   </a>
                 </li>
 
                 <li>
-                  <a href="contact.html" class="nav-link py-0">
+                  <a href="<?php echo base_url() ?>contact" class="nav-link py-0">
                     Contact Us
                   </a>
                 </li>
@@ -44,16 +44,16 @@
             <div class="footer-cont-btm">
               <h5 class="footer-top-title">contact information</h5>
               <address class="my-4">
-                <p>+4667 Woodland Terrace Folsom, California 916-983-6577.</p>
+                <p>G-III-3, Department of Geological Sciences, 188, Raja S.C. Mallick Rd, Kolkata 700032, West Bengal, India</p>
               </address>
               <ul class="d-flex header-agile pt-0">
                 <li>
                   <span class="fas fa-envelope-open"></span>
-                  <a href="mailto:example@email.com" class="text-secondary">info@example.com</a>
+                  <a href="mailto:example@email.com" class="text-secondary">nibirmandal@yahoo.co.in</a>
                 </li>
                 <li>
                   <span class="fas fa-phone-volume"></span>
-                  <p class="d-inline text-secondary">+456 123 7890</p>
+                  <p class="d-inline text-secondary">033- 244 2364</p>
                 </li>
               </ul>
             </div>
@@ -129,7 +129,7 @@
           </div>
           <div class="col-lg-6 my-lg-auto mt-3">
             <div class="cpy-right text-lg-right text-center">
-              <p class="text-secondary">© <?php echo date('Y') ?> Jugeo Dynamics. All rights reserved
+              <p class="text-secondary">© <?php echo date('Y') ?> Ju Geo-Dynamics. All rights reserved
               </p>
             </div>
           </div>

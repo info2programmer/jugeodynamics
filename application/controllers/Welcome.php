@@ -17,7 +17,7 @@ class Welcome extends CI_Controller
 	public function research()
 	{
 		$data = array(
-			'researchList' => $this->db->query("SELECT * FROM ju_research WHERE publisher=1 ORDER BY id DESC")->result()
+			'researchList' => $this->db->query("SELECT * FROM ju_research WHERE publisher=1 ORDER BY id ASC")->result()
 		);
 		$this->load->view('front/research-view', $data);
 	}

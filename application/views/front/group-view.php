@@ -6,12 +6,12 @@
     <?php $this->load->view('front/layouts/header') ?>
     <!-- //header -->
     <!-- banner -->
-    <div class="inner-banner-w3ls text-right d-flex align-items-center">
+    <div class="inner-banner-w3ls text-right d-flex align-items-center" style="background: url(<?php echo base_url() ?>assets/front/images/inner-banner_a.jpg) no-repeat content-box;min-height: 802px;">
         <div class="container">
             <h6 class="agileinfo-title">Group </h6>
             <ol class="breadcrumb-parent d-flex justify-content-end">
                 <li class="breadcrumb-nav">
-                    <a href="index.html">Home</a>
+                    <a href="<?php echo base_url() ?>">Home</a>
                 </li>
                 <li class="breadcrumb-nav active  text-capitalize" aria-current="page">Members</li>
             </ol>

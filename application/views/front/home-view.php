@@ -1,4 +1,12 @@
 <?php $this->load->view('front/layouts/head') ?>
+<style>
+  .about-sub-title {
+    margin: 0.4em 0;
+    font-weight: 700;
+    color: #000;
+    font-size: 1.75rem;
+  }
+</style>
 
 <body>
   <div class="se-pre-con"></div>
@@ -18,22 +26,22 @@
         <div class="carousel-inner">
           <div class="carousel-item bg1 active">
             <div class="bnr-text-wthree">
-              <h3 class="b-w3ltxt">the perfect theme for</h3>
-              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p>
+              <!-- <h3 class="b-w3ltxt">the perfect theme for</h3>
+              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p> -->
             </div>
           </div>
           <!-- slider text -->
           <div class="carousel-item bg2">
             <div class="bnr-text-wthree">
-              <h3 class="b-w3ltxt">the perfect theme for</h3>
-              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p>
+              <!-- <h3 class="b-w3ltxt">the perfect theme for</h3>
+              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p> -->
             </div>
           </div>
           <!-- slider text -->
           <div class="carousel-item bg3">
             <div class="bnr-text-wthree">
-              <h3 class="b-w3ltxt">the perfect theme for</h3>
-              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p>
+              <!-- <h3 class="b-w3ltxt">the perfect theme for</h3>
+              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p> -->
             </div>
           </div>
           <!-- slider text -->
@@ -52,17 +60,15 @@
 
     <div class="row  align-items-center no-gutters abbot-grid2">
       <div class="col-lg-6 py-lg-3 px-sm-5 px-3 py-4 abbot-right order-lg-0 order-1">
-        <i class="fas fa-user-graduate  text-color3"></i>
-        <h3 class="about-sub-title card-title align-self-center pt-sm-0 pt-3">Prof. Nibir Mandal of Jadavpur </h3>
+        <h3 class="about-sub-title card-title align-self-center pt-sm-0 pt-3">Nibir Mandal</h3>
+        <h6 class="">Professor</h6>
+        <h6 class="">Fellow, Indian National Science Academy</h6>
+        <h6 class="">Fellow, Indian Academy of Sciences</h6>
+        <h6 class="">J.C. BOSE Fellow</h6>
         <span class="w3-line"></span>
         <span class="w3-line mx-auto text-center d-block"></span>
-        <p class="card-text align-self-center my-3">
-          Prof. Nibir Mandal of Jadavpur University has been selected for the G. D. Birla Award for Scientific Research for his work in the area of structural geology.</p>
-        <p class="card-text align-self-center mb-4">The award, set up by the K. K. Birla Foundation for scientists below the age of 50, carries a cash prize of Rs.1.5 lakh..</p>
-        <p class="card-text align-self-center mb-4">Fifty-year-old Mandal has made important contributions in the area of structural geology and tectonics, said the Foundation.</p>
-        <p class="card-text align-self-center mb-4">“Prof. Mandal’s work deals mainly with theoretical and experimental aspects of structural geology and tectonics. He enunciated a theory of particle motion associated with faults undergoing both translational and rotational movement,” it said. - PTI</p>
-        <p class="card-text align-self-center mb-4">
-          <a href="">View Full CV</a>
+        <p class="card-text justify-content-center my-3" style="text-align: justify;font-size: 14px;">
+          Prof. Mandal’s research primarily aims at theorizing deformational and flow processes in the Earth's interior. A direction of his research deals with the kinematic analysis of ductile shear zones, and theoretically predicts the amount of transpression in orogenic systems. He proposed new hydrodynamic models for characterizing the flow perturbations around mechanically interacting rigid as well as deformable bodies. He has shown the process of flaw-controlled shear localization in heterogeneous rocks, emphasizing the role of different physical factors that control plastic strain localization around a pre-existing flaw. His study describes the mechanics of failure at the fault tips, resulting in the formation of damage zones. The current research interest of Professor Mandal involves the large scale flow systems in governing major geodynamic processes in the framework of geophysical fluid mechanics. Using computational fluid dynamics (CFD) simulations his work provides explanation to the dynamics of magmatic segmentation along mid-oceanic ridges (MORs), Rayleigh-Taylor instabilities in the Earth's interior, subduction zone settings. His theoretical and experimental studies show the mode of sequential thrusting in the upper crustal regime. His work demonstrates the nature of Himalayan dynamic topography as a function of the flow conditions induced by the underthrusting plate. Professor Mandal has been actively engaged on the research on computational mineral physics, in particular calculation of pressure-dependent physical properties, like elastic, seismic and electrical properties of silicates and oxides. Using density functional theory his studies evaluates phase stability of various mineral phases, for example wurtzite, zircon and its high pressure polymorphs, spinels and casseterite.
         </p>
       </div>
       <div class="col-lg-6 p-0 right-about-bg  order-lg-1 order-0">
@@ -76,7 +82,6 @@
     <div class="testimonials py-lg-5" id="testi">
       <div class="container py-5">
         <div class="title-section pb-4">
-          <h3 class="main-title-agile">what our professor say</h3>
           <div class="title-line">
           </div>
         </div>
@@ -86,13 +91,7 @@
               <li id="callbacks1_s0" class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out 0s;">
                 <div class="testi-agile">
                   <p>
-                    <i class="fas fa-quote-left"></i>Vivamus magna justo, lacinia eget consectetur sed,
-                    convallis at tellus. Nulla
-                    quis lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada
-                    feugiat.
-                    Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit.
+                    <i class="fas fa-quote-left"></i>Understanding the underlying physics of geodynamic processes, ranging from cation ordering in mantle mineral phases to making of mountains is the driving motivation of our research group. Like any other branch of sciences, we always endeavour into the exciting questions through theory and experiments. As a lead of this group, I dream of developing a strong platform for quantitative geosciences in India.
                     <i class="fas fa-quote-right"></i>
                   </p>
                 </div>
