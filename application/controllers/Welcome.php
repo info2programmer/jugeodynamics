@@ -4,8 +4,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Welcome extends CI_Controller
 {
 
-
-	// find_data($table,$return_type='array',$list=NULL,$conditions='',$select='*',$join='',$group_by='',$order_by='',$limit=0,$offset=0,$or_where_in='',$or_like='')
 	public function index()
 	{
 		$data = array(
@@ -55,5 +53,27 @@ class Welcome extends CI_Controller
 		$memberDetails = $this->db->query("SELECT * FROM ju_group WHERE id = $memberId")->row();
 
 		echo json_encode(['memberDetails' => $memberDetails]);
+	}
+
+	public function SendMessage()
+	{
+		$name = $this->input->post('name', true);
+		$email = $this->input->post('email', true);
+		$phone = $this->input->post('phone', true);
+		$message = $this->input->post('message', true);
+
+		$msgBody = '';
+
+		$msgBody .= '<strong>Name : </strong> ' . $name . '<br>';
+		$msgBody .= '<strong>Email : </strong> ' . $email . '<br>';
+		$msgBody .= '<strong>Phone : </strong> ' . $phone . '<br>';
+		$msgBody .= '<strong>Message : </strong> ' . $message . '<br>';
+
+		$subject = 'Website Enquiry ' . date('Y-m-d h:i:s a');
+		$email = 'jugeodynamics@gmail.com';
+
+		$this->common_model->send_smtpmail($email, $subject, $msgBody);
+
+		echo json_encode(['status' => 1]);
 	}
 }

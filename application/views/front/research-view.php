@@ -38,20 +38,33 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   <!-- header -->
   <?php $this->load->view('front/layouts/header') ?>
   <!-- //header -->
-
+  <!-- //header -->
   <!-- banner -->
-  <div class="inner-banner-w3ls text-right d-flex align-items-center" style="background: url(<?php echo base_url() ?>assets/front/images/research.jpg) no-repeat content-box;">
-    <div class="container">
-      <h6 class="agileinfo-title">Research </h6>
-      <ol class="breadcrumb-parent d-flex justify-content-end">
-        <li class="breadcrumb-nav">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-nav active  text-capitalize" aria-current="page">Research</li>
-      </ol>
+  <!-- Carousel -->
+  <div class="row justify-content-center align-items-center no-gutters banner-agile">
+    <div class="col-lg-12">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item research active">
+            <div class="bnr-text-wthree">
+              <!-- <h3 class="b-w3ltxt">the perfect theme for</h3>
+              <p class="mx-auto text-capitalize mt-2 text-white">education and training center</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <!-- //banner -->
     </div>
+
   </div>
+  <!-- //carousel -->
   <!-- //banner -->
+  <!-- about -->
+
   <!-- courses -->
   <section class="courses-sec py-5">
     <div class="container py-lg-5">

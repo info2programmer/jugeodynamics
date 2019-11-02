@@ -347,6 +347,24 @@ li.nav-item.active a {
     background-size: cover;
 }
 
+.research {
+    background: url(../images/research.jpg) no-repeat #ff1949;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.publication {
+    background: url(../images/publication.jpg) no-repeat #ff1949;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
 .bg2 {
     background: url(../images/bg2.jpg) no-repeat #ff1949;
     -webkit-background-size: cover;

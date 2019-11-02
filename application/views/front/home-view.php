@@ -56,7 +56,7 @@
   <!-- //banner -->
   <!-- about -->
 
-  <section class="about-bottom-agileinfo pb-lg-5">
+  <section class="about-bottom-agileinfo pb-lg-5 mt-4">
 
     <div class="row  align-items-center no-gutters abbot-grid2">
       <div class="col-lg-6 py-lg-3 px-sm-5 px-3 py-4 abbot-right order-lg-0 order-1">
@@ -64,7 +64,7 @@
         <h6 class="">Professor</h6>
         <h6 class="">Fellow, Indian National Science Academy</h6>
         <h6 class="">Fellow, Indian Academy of Sciences</h6>
-        <h6 class="">J.C. BOSE Fellow</h6>
+        <h6 class=""> Fellow, West Bengal Academy of Science and Technology</h6>
         <span class="w3-line"></span>
         <span class="w3-line mx-auto text-center d-block"></span>
         <p class="card-text justify-content-center my-3" style="text-align: justify;font-size: 14px;">

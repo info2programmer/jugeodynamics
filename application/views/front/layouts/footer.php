@@ -66,28 +66,28 @@
                   <label>
                     Name
                   </label>
-                  <input class="form-control" type="text" placeholder="Johnson" name="email" required="">
+                  <input class="form-control" type="text" placeholder="Johnson" id="txtFooterName" required="">
                 </div>
                 <div class="form-group d-flex">
                   <label>
                     Email
                   </label>
-                  <input class="form-control" type="email" placeholder="example@email.com" name="email" required="">
+                  <input class="form-control" type="email" placeholder="example@email.com" id="txtFooterEmail" required="">
                 </div>
                 <div class="form-group d-flex">
                   <label>
                     Phone
                   </label>
-                  <input class="form-control" type="text" placeholder="XXXX XXXX XX" name="email" required="">
+                  <input class="form-control" type="text" placeholder="XXXX XXXX XX" id="txtFooterPhone" required="">
                 </div>
                 <div class="form-group d-flex">
                   <label>
                     Message
                   </label>
-                  <textarea class="form-control" rows="5" id="contactcomment" placeholder="Your message" required></textarea>
+                  <textarea class="form-control" rows="5" id="txtFooterMessage" placeholder="Your message" required></textarea>
                 </div>
                 <div class="d-flex justify-content-end">
-                  <button type="submit" class="btn btn-agile btn-block w-25">Send</button>
+                  <button type="button" class="btn btn-agile btn-block w-25" onclick="sendMessageFooter()">Send</button>
                 </div>
               </form>
             </div>
@@ -191,6 +191,41 @@
 
 
       });
+
+      sendMessageFooter = () => {
+        let name = $("#txtFooterName").val();
+        let email = $("#txtFooterEmail").val();
+        let phone = $("#txtFooterPhone").val();
+        let message = $("#txtFooterMessage").val();
+
+
+        if (name == "" || email == "" || phone == "" || message == "") {
+          alert('All fields are required')
+          return
+        }
+
+        $.ajax({
+          type: "post",
+          url: "<?php echo base_url() ?>welcome/SendMessage",
+          data: {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+          },
+          dataType: "json",
+          success: function(response) {
+            if (response.status == 1) {
+              alert("Your Message Sent Successfully");
+              $("#txtFooterName").val('');
+              $("#txtFooterEmail").val('');
+              $("#txtFooterPhone").val('');
+              $("#txtFooterMessage").val('');
+              return;
+            }
+          }
+        });
+      }
     </script>
     <script src="<?php echo base_url() ?>assets/front/js/SmoothScroll.min.js"></script>
     <!-- //smooth-scrolling-of-move-up -->

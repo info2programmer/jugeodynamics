@@ -1,4 +1,5 @@
 <?php $this->load->view('front/layouts/head') ?>
+
 <body>
     <div class="se-pre-con"></div>
     <!-- header -->
@@ -38,26 +39,22 @@
                                     <label>
                                         <i class="fas fa-user" aria-hidden="true"></i>
                                     </label>
-                                    <input class="form-control" type="text" placeholder="Enter your name..."
-                                        name="email" required="">
+                                    <input class="form-control" type="text" placeholder="Enter your name..." name="email" required="">
                                 </div>
                                 <div class="form-group d-flex">
                                     <label>
                                         <i class="fas fa-envelope" aria-hidden="true"></i>
                                     </label>
-                                    <input class="form-control" type="email" placeholder="Enter your email..."
-                                        name="email" required="">
+                                    <input class="form-control" type="email" placeholder="Enter your email..." name="email" required="">
                                 </div>
                                 <div class="form-group d-flex">
                                     <label>
                                         <i class="far fa-edit"></i>
                                     </label>
-                                    <input class="form-control" type="text" placeholder="Subject" name="email"
-                                        required="">
+                                    <input class="form-control" type="text" placeholder="Subject" name="email" required="">
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="5" id="contact-comment"
-                                        placeholder="Your message" required></textarea>
+                                    <textarea class="form-control" rows="5" id="contact-comment" placeholder="Your message" required></textarea>
                                 </div>
                                 <div class="d-flex  justify-content-end">
                                     <button type="submit" class="btn btn-info btn-block w-25">Submit</button>
@@ -71,14 +68,16 @@
                     <div class="col-lg-3">
                         <div class="address">
                             <address>
-                                <p class="contact-title">location 1</p>
-                                <p class="c-txt">4667 Woodland Terrace
-                                    <br>Folsom,California
-                                    <br> 916-983-6577
+                                <p class="contact-title">location </p>
+                                <p class="c-txt">G-III-3,
+                                    <br>Department of Geological Sciences,
+                                    <br> 188, Raja S.C. Mallick Rd,
+                                    <br> Kolkata 700032, West Bengal, India
+                                    <br> 033- 244 2364
                                 </p>
                             </address>
                         </div>
-                        
+
                     </div>
 
                 </div>

@@ -26,7 +26,7 @@
                 Group
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <?php $data = $this->db->query("SELECT * FROM ju_grouptype")->result();
+                <?php $data = $this->db->query("SELECT * FROM ju_grouptype WHERE id != 3")->result();
                 foreach ($data as $list) {
                   echo "<a class='hover-fill' href='" . base_url() . "group/" . $list->id . "' >" . $list->group_name . "</a>";
                 }
